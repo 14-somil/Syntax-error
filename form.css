@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: #333;
+    background-image: linear-gradient(#333,#000);
     height: 100vh;
 }
 
@@ -24,6 +24,7 @@ header{
     padding: 15px 30px;
     border-radius: 10px 10px 0px 0px;
     background-color: #1e1e1e;
+    border-bottom: transparent;/**/
 }
 
 .textbox{
@@ -32,6 +33,7 @@ header{
     padding: 15px 30px;
     background-color: #1e1e1e;
     border-bottom: transparent;
+    border-top: transparent;/**/
     /* height: 300px; */
     /*isme vertical align karna bacha hai*/ 
 }
@@ -63,6 +65,7 @@ header{
     padding: 15px 30px;
     background-color: #1e1e1e;
     justify-content: space-between;
+    border-top: transparent;/**/
 }
 
 .btn button{
