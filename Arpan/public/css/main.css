@@ -108,18 +108,104 @@ body{
 
 .content form div div button{
     width: 200px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: #e9077b;
+    height: 75px;
+    background-color: #000;
     color: white;
-    font-size: 120%;
-    border: 3px rosybrown solid;
-    text-shadow: 0.06em 0.06em 0 rgb(0,0,0);
+    font-size: 140%;
+    border: 3px solid #fff;
 }
 
 .content form div div button:hover{
-    background-color: #ac055b;
+    animation: glitch 200ms 4;
 }
+
+@keyframes glitch{
+    0%{
+        text-shadow: 
+        0.07em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 255, 0, 0.75),
+        0.045em 0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    14%{
+        text-shadow: 
+        0.07em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 255, 0, 0.75),
+        0.045em 0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    15%{
+        text-shadow: 
+        -0.07em -0.045em 0 rgba(255, 0, 0, 0.75),
+        0.045em 0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.07em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    49%{
+        text-shadow: 
+        -0.07em -0.045em 0 rgba(255, 0, 0, 0.75),
+        0.045em 0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.07em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    50%{
+        text-shadow: 
+        0.045em 0.07em 0 rgba(255, 0, 0, 0.75),
+        0.07em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    99%{
+        text-shadow: 
+        0.045em 0.07em 0 rgba(255, 0, 0, 0.75),
+        0.07em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    100%{
+        text-shadow: 
+        -0.045em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    0%{
+        box-shadow: 
+        0.07em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 255, 0, 0.75),
+        0.045em 0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    14%{
+        box-shadow: 
+        0.07em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 255, 0, 0.75),
+        0.045em 0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    15%{
+        box-shadow: 
+        -0.07em -0.045em 0 rgba(255, 0, 0, 0.75),
+        0.045em 0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.07em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    49%{
+        box-shadow: 
+        -0.07em -0.045em 0 rgba(255, 0, 0, 0.75),
+        0.045em 0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.07em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    50%{
+        box-shadow: 
+        0.045em 0.07em 0 rgba(255, 0, 0, 0.75),
+        0.07em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    99%{
+        box-shadow: 
+        0.045em 0.07em 0 rgba(255, 0, 0, 0.75),
+        0.07em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+    100%{
+        box-shadow: 
+        -0.045em 0 0 rgba(255, 0, 0, 0.75),
+        -0.045em -0.045em 0 rgba(0, 255, 0, 0.75),
+        -0.045em -0.07em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
 
 .row1 div a, .row2 div a{
     text-decoration: none;
