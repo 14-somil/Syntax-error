@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const User = require('./models/schema');
-mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://127.0.0.1:27017/students',{useNewUrlParser:true, useUnifiedTopology: true})
+const User = require('./models/user');
+mongoose.connect('mongodb://127.0.0.1:27017/SynErrP',{useNewUrlParser:true, useUnifiedTopology: true})
     .then(()=>{
         console.log("MONGO CONNECTION OPEN")
     })
@@ -10,34 +9,35 @@ mongoose.connect('mongodb://127.0.0.1:27017/students',{useNewUrlParser:true, use
         console.log(err)
     })
 
-const seedUsers=[
+const seedInformation=[
     {
-        name:'SOMIL AGGARWAL',
-        enrollment:22115147,
-        imgsrc:'views/images/somil.png',
-        password:'22115147'
+        username: "Arpan",
+        enrollmentNumber:22115030,
+        password:"22115030",
+        imgsrc:"images/arpan.jpg"
     },
     {
-        name:'AKSHIT SINGH',
-        enrollment:22115015,
-        imgsrc:'views/images/akshit.jpg',
-        password:'22115015'  
+        username: "Somil",
+        enrollmentNumber:22115147,
+        password:"22115147",
+        imgsrc:"images/somil.png"
     },
     {
-        name:'SOMSHEKHAR SHARMA',
-        enrollment:22115146,
-        imgsrc:'views/images/som.png',
-        password:'22115146'
+        username: "Akshit",
+        enrollmentNumber:22115015,
+        password:"22115015",
+        imgsrc:"images/som.png"
     },
     {
-        name:'ARPAN MAHANTY',
-        enrollment:22115030,
-        imgsrc:'views/images/arpan.jpg',
-        password:'22115030'
+        username: "Somshekhar",
+        enrollmentNumber:22115146,
+        password:"22115146",
+        imgsrc:"images/som.png"
     }
+
 ]
 
-User.insertMany(seedUsers)
+User.insertMany(seedInformation)
     .then(res=>{
         console.log(res)
     })
