@@ -84,7 +84,7 @@ header{
     color: #fff;
     font-size: 500%;
     border-right: 9px transparent solid;
-    animation: /*typing 1.5s steps(30, end) forwards,*/ blinking 1s 3;
+    animation: /*typing 1.5s steps(30, end) forwards,*/ blinking 0.75s 6;
 }
 
 @keyframes typing {
@@ -94,7 +94,9 @@ header{
 
 @keyframes blinking {
     0% {border-color: transparent}
+    49% {border-color: transparent}
     50% {border-color: white}
+    99% {border-color: white}
     100% {border-color: transparent}
 }
 
