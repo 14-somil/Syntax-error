@@ -80,6 +80,8 @@ header{
 }
 
 .title h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
     overflow: hidden;
     color: #fff;
     font-size: 500%;
