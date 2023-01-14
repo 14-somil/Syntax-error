@@ -16,7 +16,7 @@
         </tr>
     <% Array.forEach(function(student){ %> 
         <tr>
-        <td><%=student.username%></td> <td><input type="checkbox" name="<%student.username%>" value="<%student.username%>"></td>
+        <td><%=student.username%></td> <td><input type="checkbox" name=<%=student.username%> value=<%=student.username%>></td>
         </tr>
     <% }) %> 
     </table>

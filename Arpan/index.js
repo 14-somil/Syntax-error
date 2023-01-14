@@ -76,15 +76,31 @@ app.post('/backbench/logout',(req,res)=>{
     req.session.destroy();
     res.redirect('/backbench');
 })
-app.get('/attendance',async (req,res)=>{
-    const Array =await User.find({}) 
-    res.render('attendance',{Array})
+
+app.get('/backbench/aboutus',(req,res)=>{
+    res.render('AboutUs')
 })
 
-app.post('/backbench/attendance',async (req,res)=>{
-    // const {date,username}=req.body;
-    // const founduser= await User.findOne({username});
-    console.log(req.body)
+
+app.get('/backbench/attendance',requireLogin,(req,res)=>{
+    const founduser= User.findOne({_id:req.session.user_id})
+    res.render('BBattendance',{founduser})
+    console.log(founduser)
 })
+// app.get('/attendance',async (req,res)=>{
+//     const Array =await User.find({}) 
+//     res.render('attendance',{Array})
+// })
+
+// app.post('/backbench/attendance',async (req,res)=>{
+//     const {date,username}=req.body;
+//     const founduser= await User.findOne({username});
+//     founduser.aggregate([{
+//         $addFields:{
+//            attendance:[{date:date},]
+//         }
+//     }])
+//     res.redirect('/attendance')
+// })
 
 app.listen(3000)

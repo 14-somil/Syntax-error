@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="shortcut icon" href="/public/image/Logo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="/image/Logo.jpg" type="image/jpg">
 
     <title>BackBench</title>
 </head>
@@ -36,7 +36,7 @@
                     </form>
                 </div>
                 <div class="logout">
-                    <form action="#">
+                    <form action="/backbench/aboutus">
                     <button>About Us</button>
                     </form>
                 </div>
@@ -50,16 +50,16 @@
     </header>
 
     <div class="content">
-        <div class="row1">
-            <div><a href="#">Attendance</a></div>
-            <div><a href="#">Lost and Found</a></div>
-            <div><a href="#">Split bill</a></div>
-        </div>
-        <div class="row2">
-            <div><a href="#">Organise Poll</a></div>
-            <div><a href="#">Notice Board</a></div>
-            <div><a href="#">Clubs</a></div>
-        </div>
+            <div class="row1">
+                <div><form action="/backbench/attendance"><button>Attendance</button></form></div>
+                <div><form action=""><button href="#">Lost and Found</button></form></div>
+                <div><form action=""></form><button href="#">Split bill</button></form></div>
+            </div>
+            <div class="row2">
+                <div><form action=""><button href="#">Organise Poll</button></form></div>
+                <div><form action=""><button href="#">Notice Board</button></form></div>
+                <div><form action=""><button href="#">Clubs</button></form></div>
+            </div>
     </div>
 </body>
 </html>
