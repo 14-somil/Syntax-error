@@ -79,3 +79,9 @@ header{
     background-color: #cc1db2;
     color: #fff;
 }
+
+.btn button:hover{
+    background-color: #90094c;
+    transition: 0.25s ease;
+}
+
