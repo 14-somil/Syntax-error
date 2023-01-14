@@ -38,6 +38,7 @@ body{
 
 .navbtn{
     float: right;
+    display: inline-flex;
 }
 
 .logout{
@@ -120,3 +121,27 @@ body{
     font-size: 140%;
     text-shadow: 0.06em 0.06em 0 rgb(0,0,0);
 }
+
+.content ul{
+    list-style-type: none;
+    font-size: 150%;
+}
+
+.content ul li{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.content ul li img{
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0em 0em 4px rgba(233, 7, 123, 0.75);
+}
+
+#madeusing{
+    font-size: 150%;
+    top: 70%;
+}
+
+
+
