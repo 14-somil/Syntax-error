@@ -1,17 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
     <title>BackBench</title>
 </head>
 <body>
-    <h1>Hi <%= foundUser.username %> </h1>
-    <h2>Enrollment Number : <%=foundUser.enrollmentNumber %> </h2>
-    <img src=<%= foundUser.imgsrc %>  alt="">
-    <form action="/backbench/logout" method="POST">
-        <button>LOGOUT</button>
-    </form>
+    <header>
+        <div class="nav">
+            <div class="info">
+                <div class="image">
+                    <img src=<%= foundUser.imgsrc %> alt=<%= foundUser.username %> id="profilepic">
+                </div>
+                <div class="data">
+                    Enrollment number: <%=foundUser.enrollmentNumber %> <br>
+                    Name: <%= foundUser.username %>
+                </div>
+            </div>
+
+            <div class="navbtn">
+                <div class="logout">
+                    <form action="/backbench/logout" method="POST">
+                    <!-- <a action="/backbench/logout" method="POST">Logout</a> -->
+                    <button>LOGOUT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

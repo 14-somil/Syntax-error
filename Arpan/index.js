@@ -76,14 +76,15 @@ app.post('/backbench/logout',(req,res)=>{
     req.session.destroy();
     res.redirect('/backbench');
 })
-
-// app.post('/backbench/prof',requireLogin,(req,res)=>{
-//     res.render
-// })
-
 app.get('/attendance',async (req,res)=>{
-    const Array = await User.find({username:{$exists:true}}) 
+    const Array =await User.find({}) 
     res.render('attendance',{Array})
+})
+
+app.post('/backbench/attendance',async (req,res)=>{
+    // const {date,username}=req.body;
+    // const founduser= await User.findOne({username});
+    console.log(req.body)
 })
 
 app.listen(3000)

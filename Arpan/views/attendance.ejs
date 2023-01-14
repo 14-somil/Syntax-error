@@ -7,10 +7,21 @@
     <title>Attendance</title>
 </head>
 <body>
-    <form action=""></form>
+    <form action="/backbench/attendance" method="POST">
     <input type="date" name="date">
-    <% for(Arrays.forEach()){ %> 
-    <h1><%Arrays.username%> </h1>
-    <% } %> 
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Attendance</th>
+        </tr>
+    <% Array.forEach(function(student){ %> 
+        <tr>
+        <td><%=student.username%></td> <td><input type="checkbox" name="<%student.username%>" value="<%student.username%>"></td>
+        </tr>
+    <% }) %> 
+    </table>
+
+    <button>Submit</button>
+    </form>
 </body>
 </html>
