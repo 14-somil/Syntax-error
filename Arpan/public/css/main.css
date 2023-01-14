@@ -101,18 +101,24 @@ body{
     margin-top: 10px;
 }
 
-.row1 div, .row2 div{
-    margin-left: 30px;
-    border: 3px solid rgb(106, 102, 102);
-    border-radius: 20px;
-    width: 130px;
-    height: 20px;
-    padding: 50px 50px;
+.content form div div{
     display: inline-block;
-    text-align: center;
-    background-image: linear-gradient(#e9077b,#f748a3);
-    padding-top: 48px;
-    padding-bottom: 50px;
+    margin-left: 30px;
+}
+
+.content form div div button{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #e9077b;
+    color: white;
+    font-size: 120%;
+    border: 3px rosybrown solid;
+    text-shadow: 0.06em 0.06em 0 rgb(0,0,0);
+}
+
+.content form div div button:hover{
+    background-color: #ac055b;
 }
 
 .row1 div a, .row2 div a{
