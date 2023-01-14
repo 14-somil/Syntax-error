@@ -135,7 +135,7 @@ body{
 .content ul li img{
     height: 40px;
     border-radius: 5px;
-    box-shadow: 0em 0em 4px rgba(233, 7, 123, 0.75);
+    box-shadow: 0em 0em 10px rgba(233, 7, 123, 0.75);
 }
 
 #madeusing{
