@@ -60,6 +60,7 @@ app.post('/backbench/signin',async (req,res)=>{
     if(foundUser){
         req.session.user_id=foundUser._id;
         // res.redirect('/backbench/main')
+        
         res.render('main',{foundUser})
     }
     else{
@@ -83,7 +84,8 @@ app.get('/backbench/aboutus',(req,res)=>{
 
 
 app.get('/backbench/attendance',requireLogin,(req,res)=>{
-    const founduser= User.findOne({_id:req.session.user_id})
+    
+    const founduser= User.find({_id:mongoose.Types.ObjectId(req.session.user_id)})
     res.render('BBattendance',{founduser})
     console.log(founduser)
 })

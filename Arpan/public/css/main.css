@@ -101,12 +101,12 @@ body{
     margin-top: 10px;
 }
 
-.content form div div{
+.content div div{
     display: inline-block;
     margin-left: 30px;
 }
 
-.content form div div button{
+.content div div form button{
     width: 200px;
     height: 75px;
     background-color: #000;
@@ -115,7 +115,7 @@ body{
     border: 3px solid #fff;
 }
 
-.content form div div button:hover{
+.content div div form button:hover{
     animation: glitch 200ms 4;
 }
 
