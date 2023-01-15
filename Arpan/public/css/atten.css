@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  background-image: radial-gradient(#333, #000);
+  height: 100vh;
+  color: #fff;
+}
+
+.nav{
+  height: 80px;
+  background-image: linear-gradient(#e9077b, rgba(233, 7, 123, 0.75),transparent);;
+}
+
+.info{
+  float: left;
+  display: inline-flex;
+}
+
+.image{
+  padding: 5px;
+}
+
+#profilepic{
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+.data{
+  padding-top: 10px;
+  font-weight: 500;
+  color: black;
+}
+
+.navbtn{
+  float: right;
+  display: inline-flex;
+}
+
+.logout{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.logout button{
+  padding: 10px 30px;
+  border: rgb(40, 38, 38) 5px solid;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logout button:hover{
+  box-shadow: 0.5em 0.5em 3px rgba(199,34,108,0.40);
+  margin-right: 15px;
+  /* margin-top: 10px; */
+}
+
+.logout:hover{
+  margin-top: 10px;
+}
+
+.title{
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  font-size: 350%;
+}
+
+.heading{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#back{
+  color: black;
+  text-shadow: 0.03em 0.03em 0 rgba(141, 45, 237,0.5);
+
+}
+
+#bench{
+  color: #8d2ded;
+  text-shadow: 0.03em 0.03em 0 rgb(0,0,0);
+}
+/*88888888888888888888888888888888888888888888888*/
+
+.calender{
+  width: 50%;
+  top: 20px;
+  position: relative;
+  left: 20px;
+  display: inline-block;
+}
+
+.month {
+  padding: 30px 25px;
+  background: #e9077b;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  padding-top: 5px;
+  color: #666;
+  text-align: center;
+}
+
+
+
+.cells ul li{
+  padding-top: 10px;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #e9077b;
+  color: white !important
+}
+
+.course{
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  font-size: 175%;
+}
