@@ -60,7 +60,7 @@ app.post('/backbench/signin',async (req,res)=>{
     if(foundUser){
         req.session.user_id=foundUser._id;
         // res.redirect('/backbench/main')
-        
+
         res.render('main',{foundUser})
     }
     else{
@@ -83,11 +83,21 @@ app.get('/backbench/aboutus',(req,res)=>{
 })
 
 
-app.get('/backbench/attendance',requireLogin,(req,res)=>{
-    
-    const founduser= User.find({_id:mongoose.Types.ObjectId(req.session.user_id)})
+app.get('/backbench/attendance',requireLogin,async (req,res)=>{
+    const id = req.session.user_id
+    const founduser=await User.findOne({_id:id})
     res.render('BBattendance',{founduser})
-    console.log(founduser)
+})
+
+app.get('/backbench/man',requireLogin,async(req,res)=>{
+    const id = req.session.user_id
+    const founduser=await User.findOne({_id:id})
+    res.render('maths',{founduser})
+})
+app.get('/backbench/phn',requireLogin,async(req,res)=>{
+    const id = req.session.user_id
+    const founduser=await User.findOne({_id:id})
+    res.render('physics',{founduser})
 })
 // app.get('/attendance',async (req,res)=>{
 //     const Array =await User.find({}) 

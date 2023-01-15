@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHN-003</title>
+</head>
+<body>
+    <h1>Name: <%=founduser.username%></h1>
+    <h1>Cource name: PHN-003</h1>
+    <h1>Your Attendance percentage till now : <% const present =founduser.phnPresent;const daysRem=founduser.daysRemaining%><%=(present.length/20)*100%>%</h1>
+    <h1>Total attendance percentage:<%=Math.trunc((present.length/26)*100)%>%</h1>
+    <% const remDays= 20 -present.length; %> 
+    <% if(remDays>daysRem){%>
+        <h2>Sorry Bhai teri Back lag gayi!</h2> 
+    <% } %>
+    <% if(remDays==daysRem){%>
+        <h2>You have to attend all the classes</h2>
+        <h2>Classes to attend for 75% attendance: <%=remDays%> </h2>
+    <% } %>  
+    <% if(remDays<daysRem && remDays>0){%>
+        <h2>You are on track, keep going!</h2>
+        <h2>Classes to attend for 75% attendance: <%=remDays%> </h2>
+    <% } %>
+    <% if(remDays<1){%>
+        <h2>Mauj kar! no need of attending any class</h2>
+    <% } %>
+    <h2>Days present in class:<%=present.length%> out of <%=20%></h2>
+    <h2>Total number of days in course: 26 </h2>
+    <h2>Classes remaining in course: 6</h2>  
+    <form action="/backbench/logout" method ="POST">
+        <button>LOGOUT</button>
+    </form>
+</body>
+</html>
